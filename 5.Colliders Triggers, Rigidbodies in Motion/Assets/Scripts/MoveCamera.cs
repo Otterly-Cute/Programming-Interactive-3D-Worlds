@@ -17,7 +17,9 @@ public class MoveCamera : MonoBehaviour
     void Update()
     {
         Vector3 currPos = objCamera.transform.position;
-        currPos.y = objPlayer.transform.position.y;
+        currPos.y = objPlayer.transform.position.y+5;
+        currPos.x = objPlayer.transform.position.x + 10;
+        currPos.z = objPlayer.transform.position.z;
         objCamera.transform.position = currPos;
     }
 }
